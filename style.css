@@ -1,0 +1,111 @@
+ /* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+main{
+  background-color: rgba(240, 248, 255, 0.315);
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  margin: 0 auto;
+  min-height: 122px;
+  max-height: 443px;
+  border:2px solid black;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 20px 0px black;
+  padding: 3rem;
+}
+h1 {
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color:cadetblue;
+}
+.disabled{
+  color: gainsboro;
+}
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 2rem 2rem 0 2rem;
+  flex:1;
+  min-width: 256px;
+  overflow: auto;
+  margin:0 2rem;
+  border:1px solid salmon;
+  border-radius: 2rem 0.2rem 0.2rem 2rem;
+  box-shadow: 2px 0px 5px 0px rgb(174, 171, 171);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.374);
+  border-radius: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.253); 
+  border-radius: 10px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.audio-container {
+  margin:0;
+  flex:2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+#logo{
+  /* background-image: url("https://random.imagecdn.app/800/800"); */
+  display: block;
+  border: 2px solid black;
+  flex: 2;
+  max-height: 388px;
+  border-radius:3rem;
+  box-shadow: 0 0 0.9rem 0.2em rgba(126, 100, 42, 0.374);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+#radioPlayer{
+  width:100%;
+  height: 100%;
+  min-height: 50px;
+}
+.active{
+  color:rgb(4, 79, 98);
+  background-color: bisque;
+  box-shadow: 0 0 0.5rem rgba(126, 100, 42, 0.374);
+  padding:0.2rem;
+  border-radius: 1rem;
+}
+audio{
+  border: 2px solid black;
+  border-radius: 3rem;
+  box-shadow: 0 0 0.5rem rgba(126, 100, 42, 0.374);
+}
+
+@media only screen and (max-width: 950px) {
+  main {
+    flex-direction: column-reverse;
+    min-height: 850px;
+  }
+  ul{
+    min-height:400px;
+    margin-top: 1rem;
+  }
+}

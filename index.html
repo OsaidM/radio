@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Radio Station App</title>
+</head>
+
+<body>
+    <h1>Radio Station App</h1>
+    <main>
+        <ul id="stations">
+            <!-- Add your default stations here -->
+            <li><a href="http://www.quran-radio.org:8002/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true"> إذاعة القران الكريم</a></li>
+            <li><a href="http://46.43.64.50:8024/stream.ogg">إذاعة الهدى 101 اف ام - قلقيلية </a></li>
+            <li><a href="https://icecast.mada.ps:8212/kolalnas">راديو كل الناس</a></li>
+            <li><a href="http://streamer.mada.ps:8026/stream"> راديو اجيال 103.4 FM - رام الله والبيرة</a></li>
+            <li><a href="http://82.213.26.67:8000/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true">اذاعة البرج</a></li>
+            <li><a href="https://securestreams6.autopo.st:2155/aaup">اذاعة الجامعة العربية الامريكية 97.1 - جنين</a></li>
+            <li><a href="http://live.raya.ps:8064/;stream.mp3">اذاعة راية</a></li>
+            <li><a href="http://rs.hadara.ps:8550/stream/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true">اذاعة صوت النجاح </a></li>
+            <li><a href="http://live.alboraq.ps:8000/;stream.mp3">راديو صوت القدس</a></li>
+            <li><a href="http://188.225.182.10:8000/live">راديو يبوس Yaboos</a></li>
+            <li><a href="https://streaming.zaytonatube.com/test2.aac">شباب اف ام Shabab FM</a></li>
+            <li><a href="http://rs.hadara.ps:8044/listen.pls/;listen.pls?sid=1">راديو باور الشبابي</a></li>
+            <li><a href="http://streamer.mada.ps:8026/stream">راديو طريق المحبة</a></li>
+            <li><a href="http://rs.hadara.ps:8000/;stream.mp33&13202692901&duration=99999&id=scplayer&autostart=true">راديو الحرية</a></li>
+            <li><a href="http://radio.r4fm.ps:8044/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true">راديو الرابعة</a></li>
+            <li><a href="http://rs.hadara.ps:8004/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true">راديو الفجر</a></li>
+            <li><a href="https://www.rb2000.ps/live-broadcast">راديو بيت لحم 2000</a></li>
+            <li><a href="https://c23.radioboss.fm/stream/109">راديو دريم</a></li>
+            <li><a href="http://188.165.0.118:8000/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true">راديو صوت النقب</a></li>
+            <li><a href="http://213.6.105.235:8000/broadwave.mp3">راديو علم</a></li>
+            <li><a href="https://streamer.mada.ps:8210/nisaa">راديو نساء</a></li>
+            <li><a href="http://rs.hadara.ps:8610/stream/;stream.mp3">راديو نغم</a></li>
+            <li><a href="https://rs.hadara.ps:9556/stream">راديو وطن</a></li>
+            <li><a href="#">راديو بلدنا</a></li>
+            <li><a href="#">اذاعة الخليل</a></li>
+            <li><a href="#">اذاعة صوت الاقصى</a></li>
+            <li><a href="#">اذاعة صوت الحرية</a></li>
+            <li><a href="#">اذاعة عروبة</a></li>
+            <li><a href="#">امواج اف ام</a></li>
+            <li><a href="#">ايكو اف ام</a></li>
+            <li><a href="#">راديو البلد</a></li>
+            <li><a href="#">راديو السنابل</a></li>
+            <li><a href="#">راديو الظاهرية</a></li>
+            <li><a href="#">راديو المستقبل</a></li>
+            <li><a href="#">راديو اليمامة</a></li>
+            <li><a href="#">راديو بانوراما</a></li>
+            <li><a href="#">راديو حلا</a></li>
+            <li><a href="#">راديو دنيا</a></li>
+            <li><a href="#">راديو زين</a></li>
+            <li><a href="#">راديو سراج</a></li>
+            <li><a href="#">راديو مدى</a></li>
+            <li><a href="#">راديو مرح</a></li>
+            <li><a href="#">راديو مزايا </a></li>
+            <li><a href="#">راديو منبر القدس</a></li>
+            <li><a href="#">راديو نابلس</a></li>
+            <li><a href="#">راديو ون One</a></li>
+            <!-- Add more stations as needed -->
+        </ul>
+        <div class="audio-container">
+            <img src="https://random.imagecdn.app/800/800" id="logo" class="audio-logo"/>
+            <div class="audio-player">
+                <audio id="radioPlayer" controls>
+                    <!-- Default audio source -->
+                    <source src="http://www.quran-radio.org:8002/;stream.mp3&13202692901&duration=99999&id=scplayer&autostart=true" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
